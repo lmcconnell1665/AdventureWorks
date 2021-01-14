@@ -1,5 +1,6 @@
 CREATE TABLE [SalesLT].[Customer] (
     [CustomerID]   INT               IDENTITY (1, 1) NOT NULL,
+    [CustClass]    INT               NULL,
     [NameStyle]    [dbo].[NameStyle] CONSTRAINT [DF_Customer_NameStyle] DEFAULT ((0)) NOT NULL,
     [Title]        NVARCHAR (8)      NULL,
     [FirstName]    [dbo].[Name]      NOT NULL,
